@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="22423" started-at="2013-11-03T17:48:36Z" finished-at="2013-11-03T17:48:58Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="22423" started-at="2013-11-03T17:48:36Z" finished-at="2013-11-03T17:48:58Z">
+      <class name="test.GetHTTParchive">
+        <test-method status="PASS" signature="createDriver()[pri:0, instance:test.GetHTTParchive@29386c7]" name="createDriver" is-config="true" duration-ms="7085" started-at="2013-11-03T19:48:36Z" finished-at="2013-11-03T19:48:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createDriver -->
+        <test-method status="PASS" signature="httpRequestCheck()[pri:0, instance:test.GetHTTParchive@29386c7]" name="httpRequestCheck" duration-ms="14402" started-at="2013-11-03T19:48:43Z" finished-at="2013-11-03T19:48:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- httpRequestCheck -->
+        <test-method status="PASS" signature="tidyUp()[pri:0, instance:test.GetHTTParchive@29386c7]" name="tidyUp" is-config="true" duration-ms="922" started-at="2013-11-03T19:48:57Z" finished-at="2013-11-03T19:48:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tidyUp -->
+      </class> <!-- test.GetHTTParchive -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
