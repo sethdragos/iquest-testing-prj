@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="22423" started-at="2013-11-03T17:48:36Z" finished-at="2013-11-03T17:48:58Z">
+  <suite name="Default suite" duration-ms="18765" started-at="2013-11-04T13:11:55Z" finished-at="2013-11-04T13:12:14Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="22423" started-at="2013-11-03T17:48:36Z" finished-at="2013-11-03T17:48:58Z">
+    <test name="Default test" duration-ms="18765" started-at="2013-11-04T13:11:55Z" finished-at="2013-11-04T13:12:14Z">
       <class name="test.GetHTTParchive">
-        <test-method status="PASS" signature="createDriver()[pri:0, instance:test.GetHTTParchive@29386c7]" name="createDriver" is-config="true" duration-ms="7085" started-at="2013-11-03T19:48:36Z" finished-at="2013-11-03T19:48:43Z">
+        <test-method status="PASS" signature="createDriver()[pri:0, instance:test.GetHTTParchive@741bb804]" name="createDriver" is-config="true" duration-ms="5969" started-at="2013-11-04T15:11:55Z" finished-at="2013-11-04T15:12:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createDriver -->
-        <test-method status="PASS" signature="httpRequestCheck()[pri:0, instance:test.GetHTTParchive@29386c7]" name="httpRequestCheck" duration-ms="14402" started-at="2013-11-03T19:48:43Z" finished-at="2013-11-03T19:48:57Z">
+        <test-method status="PASS" signature="httpRequestCheck()[pri:0, instance:test.GetHTTParchive@741bb804]" name="httpRequestCheck" duration-ms="12118" started-at="2013-11-04T15:12:01Z" finished-at="2013-11-04T15:12:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- httpRequestCheck -->
-        <test-method status="PASS" signature="tidyUp()[pri:0, instance:test.GetHTTParchive@29386c7]" name="tidyUp" is-config="true" duration-ms="922" started-at="2013-11-03T19:48:57Z" finished-at="2013-11-03T19:48:58Z">
+        <test-method status="PASS" signature="tidyUp()[pri:0, instance:test.GetHTTParchive@741bb804]" name="tidyUp" is-config="true" duration-ms="668" started-at="2013-11-04T15:12:13Z" finished-at="2013-11-04T15:12:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tidyUp -->

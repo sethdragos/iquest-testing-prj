@@ -1,4 +1,4 @@
-package test;
+package catalin;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
