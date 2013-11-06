@@ -11,9 +11,16 @@
     <properties>
         <testng-version>6.8.7</testng-version>
         <apache-http-client-version>4.2.6</apache-http-client-version>
+        <selenium-web-driver-version>2.37.0</selenium-web-driver-version>
+        <browsermob-proxy-version>2.0-beta-8</browsermob-proxy-version>
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>${selenium-web-driver-version}</version>
+        </dependency>
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
@@ -23,6 +30,11 @@
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpclient</artifactId>
             <version>${apache-http-client-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>net.lightbody.bmp</groupId>
+            <artifactId>browsermob-proxy</artifactId>
+            <version>${browsermob-proxy-version}</version>
         </dependency>
     </dependencies>
     
