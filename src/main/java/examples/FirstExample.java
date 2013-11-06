@@ -37,7 +37,7 @@ public class FirstExample {
         httpClient.closeConnection();
     }
 
-    private static void executeGetRequest(String url) throws IOException {
+    public static void executeGetRequest(String url) throws IOException {
         System.out.println("Executing request HTTP GET request for URL: " + url);
         httpClient.executeGet(url);
         System.out.println("Response status code is: " + httpClient.getResponseStatusCode());
