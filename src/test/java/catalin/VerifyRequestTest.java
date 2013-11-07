@@ -38,9 +38,9 @@ public class VerifyRequestTest {
             close();
         }
 		
-    Integer status=httpClient.getResponseStatusCode();   
+    Integer expectedStatus = 200;   
  
-    Assert.assertEquals(httpClient.getResponseStatusCode(), status, "HTTP response NOT OK");
+    Assert.assertEquals(httpClient.getResponseStatusCode(), expectedStatus, "HTTP response NOT OK");
     System.out.println("HTTP status OK");
     
     }	
