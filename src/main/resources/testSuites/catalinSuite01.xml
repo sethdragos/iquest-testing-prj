@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="catalinSuite01">
+
+	<!--  
+    <test name="TestPackages">
+        <packages>
+            <package name="catalin"/>
+        </packages>
+    </test>
+    -->
+    
+    <test name="TestClasses">
+        <classes>
+            <class name="catalin.VerifyRequestTest"/>
+        </classes>
+    </test>
+    
+    <test name="TestMethods">
+        <classes>
+            <class name="catalin.VerifyRequestTest">
+                <methods>
+                    <include name="HTTPStatusTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    
+</suite>
