@@ -63,7 +63,7 @@ public void tidyUp() throws Exception {
 	driver.quit();
 }
 
-@Test
+@Test (testName = "GetHARfile")
 public void httpRequestCheck() throws IOException {
   
 	server.newHar("FT");
