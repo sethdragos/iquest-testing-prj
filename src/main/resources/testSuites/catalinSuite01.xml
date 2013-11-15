@@ -23,13 +23,15 @@
                     <include name="HTTPStatusTest"/>
                 </methods>
             </class>
+            
+            <!--  
             <class name="catalin.GetHTTParchive">
                 <methods>
                     <exclude name="GetHARfile"/>
                 </methods>
-            </class>        
-        </classes>
-        <classes>
+            </class> 
+            -->       
+
             <class name="dragos.DataProvidersExampleTest">
                 <methods>
                     <include name="My First Test"/>
