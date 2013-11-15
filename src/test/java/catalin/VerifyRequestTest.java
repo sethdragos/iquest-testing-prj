@@ -25,7 +25,7 @@ public class VerifyRequestTest {
         httpClient.closeConnection();
     }
 	
-	@Test
+	@Test (testName = "HTTPStatusTest")
     public void mainTest() {
 		
 	System.out.println("Connecting to: " + URL);
