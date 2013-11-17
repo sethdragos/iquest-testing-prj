@@ -1,37 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="catalinSuite01">
-
-	<!--  
+<suite name="vallachMainSuite">
+  
     <test name="TestPackages">
         <packages>
-            <package name="catalin"/>
+            <package name="vallach"/>
         </packages>
     </test>
-    -->
     
     <test name="TestClasses">
         <classes>
-            <class name="catalin.VerifyRequestTest"/>
+            <class name="vallach.VerifyRequestTest"/>
         </classes>
     </test>
     
     <test name="TestMethods">
+    
         <classes>
-            <class name="catalin.VerifyRequestTest">
+            <class name="vallach.VerifyRequestTest">
                 <methods>
                     <include name="HTTPStatusTest"/>
                 </methods>
             </class>
             
-            <!--  
-            <class name="catalin.GetHTTParchive">
+ 
+            <class name="vallach.GetHTTParchive">
                 <methods>
                     <exclude name="GetHARfile"/>
                 </methods>
-            </class> 
-            -->       
-
+            </class>
+    
             <class name="dragos.DataProvidersExampleTest">
                 <methods>
                     <include name="My First Test"/>

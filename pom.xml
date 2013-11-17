@@ -11,7 +11,7 @@
     <properties>
         <testng-version>6.8.7</testng-version>
         <apache-http-client-version>4.2.6</apache-http-client-version>
-        <selenium-web-driver-version>2.37.0</selenium-web-driver-version>
+        <selenium-web-driver-version>2.31.0</selenium-web-driver-version>
         <browsermob-proxy-version>2.0-beta-8</browsermob-proxy-version>
     </properties>
 
@@ -25,6 +25,7 @@
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>${testng-version}</version>
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
@@ -38,4 +39,79 @@
         </dependency>
     </dependencies>
     
+    <!-- 
+    vallach: is this plugin needed or surfire automatically includes reporting as well?
+    
+    <reporting>
+    	<plugins>
+      		<plugin>
+        		<groupId>org.apache.maven.plugins</groupId>
+        		<artifactId>maven-surefire-report-plugin</artifactId>
+        		<version>2.16</version>
+      		</plugin>
+    	</plugins>
+  	</reporting>
+    -->
+    
+  	<profiles>
+ 		<profile>
+    		<id>vallachProfile01</id>
+    		<build>
+    			<plugins>
+		        	<plugin>
+          				<groupId>org.apache.maven.plugins</groupId>
+          				<artifactId>maven-surefire-plugin</artifactId>
+          				<version>2.16</version>
+          				<configuration>
+          					<suiteXmlFiles>
+	            				<suiteXmlFile>src\main\resources\testSuites\vallachSuite01.xml</suiteXmlFile>
+          					</suiteXmlFiles>
+          				</configuration>
+        			</plugin>
+    	  		</plugins>
+    	  	</build>
+		</profile>
+  		<profile>
+    		<id>vallachProfile02</id>
+    		<build>
+    			<plugins>
+		        	<plugin>
+          				<groupId>org.apache.maven.plugins</groupId>
+          				<artifactId>maven-surefire-plugin</artifactId>
+          				<version>2.16</version>
+          				<configuration>
+          					<suiteXmlFiles>
+	            				<suiteXmlFile>src\main\resources\testSuites\vallachSuite02.xml</suiteXmlFile>
+          					</suiteXmlFiles>
+          				</configuration>
+        			</plugin>
+    	  		</plugins>
+    	  	</build>
+  		</profile>
+  		 <profile>
+    		<id>vallachProfile03</id>
+    		<build>
+    			<plugins>
+		        	<plugin>
+          				<groupId>org.apache.maven.plugins</groupId>
+          				<artifactId>maven-surefire-plugin</artifactId>
+          				<version>2.16</version>
+          				<configuration>
+          					<suiteXmlFiles>
+	            				<suiteXmlFile>src\main\resources\testSuites\vallachSuite03.xml</suiteXmlFile>
+          					</suiteXmlFiles>
+          				</configuration>
+          			    <dependencies>
+      						<dependency>
+      							<groupId>org.seleniumhq.selenium</groupId>
+    							<artifactId>selenium-server</artifactId>
+    							<version>2.31.0</version>
+            				</dependency>
+            			</dependencies>
+        			</plugin>
+    	  		</plugins>
+    	  	</build>
+  		</profile>
+	</profiles>
+  	
 </project>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="catalinSuite02">
+<suite name="vallachSuite02">
     
     <test name="TestMethods">
         <classes>
-            <class name="catalin.VerifyRequestTest">
+            <class name="vallach.VerifyRequestTest">
                 <methods>
                     <include name="HTTPStatusTest"/>
                 </methods>

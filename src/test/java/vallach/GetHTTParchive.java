@@ -1,4 +1,4 @@
-package catalin;
+package vallach;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -72,7 +72,7 @@ public void httpRequestCheck() throws IOException {
 
 	System.out.println("HAR = " + har);
 	
-	strFilePath = "Selenium_test.har";
+	strFilePath = "GetHTTParchive_test.har";
 	FileOutputStream fos = new FileOutputStream(strFilePath);
 	har.writeTo(fos);
 }
