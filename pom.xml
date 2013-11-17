@@ -36,6 +36,12 @@
             <groupId>net.lightbody.bmp</groupId>
             <artifactId>browsermob-proxy</artifactId>
             <version>${browsermob-proxy-version}</version>
+            <exclusions>
+        		<exclusion>
+	            	<groupId>org.seleniumhq.selenium</groupId>
+            		<artifactId>selenium-api</artifactId>
+        		</exclusion>
+    		</exclusions>
         </dependency>
     </dependencies>
     

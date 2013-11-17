@@ -75,5 +75,5 @@ public void httpRequestCheck() throws IOException {
 	strFilePath = "GetHTTParchive_test.har";
 	FileOutputStream fos = new FileOutputStream(strFilePath);
 	har.writeTo(fos);
-}
+	}
 }
