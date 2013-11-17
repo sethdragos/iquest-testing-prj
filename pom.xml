@@ -11,7 +11,7 @@
     <properties>
         <testng-version>6.8.7</testng-version>
         <apache-http-client-version>4.2.6</apache-http-client-version>
-        <selenium-web-driver-version>2.31.0</selenium-web-driver-version>
+        <selenium-web-driver-version>2.37.1</selenium-web-driver-version>
         <browsermob-proxy-version>2.0-beta-8</browsermob-proxy-version>
     </properties>
 
