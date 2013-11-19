@@ -12,7 +12,7 @@ import java.io.IOException;
 public class GetHTTPstatus {
     private static final String URL = "http://www.ft.com";          //definesc constanta URL ; final - inseamna ca nu se modifica
     private static SimpleHttpClient httpClient;
-    private static  Integer EXPECTED_STATUS = 200;                  //creez expected status care e o valoare finala aka 200
+    private static  Integer EXPECTED_STATUS = 304;                  //creez expected status care e o valoare finala aka 200
 
     @BeforeTest
     private void init() {
