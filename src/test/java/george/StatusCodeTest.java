@@ -16,7 +16,6 @@ public class StatusCodeTest {
     @BeforeTest
     private static void init() {
         httpClient = new SimpleHttpClient();
-
     }
 
     @AfterTest
