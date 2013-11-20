@@ -16,7 +16,6 @@ public class StatusCodeTest {
     @BeforeTest
     private static void init() {
         httpClient = new SimpleHttpClient();
-
     }
 
     @AfterTest
@@ -34,8 +33,8 @@ public class StatusCodeTest {
             System.err.println("Cannot connect to " + URL + ". " + ioe);
         }
         Integer expectedStatus = 200;
-        System.out.println("This is not OK");
         Assert.assertEquals(httpClient.getResponseStatusCode(), expectedStatus, "HTTP response NOT OK");
+        System.out.println("This is not OK");
 
     }
 }
