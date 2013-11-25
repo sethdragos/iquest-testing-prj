@@ -50,7 +50,7 @@ public class DataProvidersExampleTest {
     @Test(testName = "My First Test",
             dataProviderClass = ExampleDataProviders.class,
             dataProvider = "firstDataProvider")
-    public void fistTest(String number, String name, String city) {
+    public void firstTest(String number, String name, String city) {
 
         System.out.println("Starting test method..");
         System.out.println("Agent " + number + " is called " + name + " and lives in " + city);
