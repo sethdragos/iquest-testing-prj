@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="GeorgeSuite">
+    <test name="Test1">
+        <packages>
+            <package name="dragos">
+            </package>
+        </packages>
+    </test>
+    <test name="Test2">
+        <classes>
+            <class name="dragos.DataProvidersExampleTest">
+            </class>
+        </classes>
+    </test>
+    <test name="DataProviderTest">
+        <packages>
+            <package name="george">
+            </package>
+        </packages>
+    </test>
+    <test name="StatusCodeTest">
+        <classes>
+            <class name="george.StatusCodeTest">
+            </class>
+        </classes>
+    </test>
+    <test name="My Second Test">
+        <classes>
+            <class name="dragos.DataProvidersExampleTest">
+                <methods>
+                    <exclude name="My First Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
