@@ -1,6 +1,7 @@
 package dragos;
 
 import examples.ExampleDataProviders;
+import examples.PdfListener;
 import org.testng.annotations.*;
 
 import static org.testng.Assert.assertEquals;
@@ -11,6 +12,7 @@ import static org.testng.Assert.assertNotNull;
  * User: dragos.serghie
  * Date: 11/4/13
  */
+@Listeners(PdfListener.class)
 public class DataProvidersExampleTest {
 
     private int i = 0;
