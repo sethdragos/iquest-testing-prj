@@ -4,6 +4,14 @@ import utils.SimpleHttpClient;
 
 import java.io.IOException;
 
+/**
+ * Created with IntelliJ IDEA.
+ * User: dragos.serghie
+ * Date: 10/28/13
+ * Time: 11:50 AM
+ * To change this template use File | Settings | File Templates.
+ */
+
 public class GetStatusCodeExampleTest {
 
     private static final String URL = "http://www.ft.com";
