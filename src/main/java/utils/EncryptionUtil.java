@@ -15,7 +15,7 @@ public class EncryptionUtil {
     private static final byte[] KEY = "ADBSJHJS12547896".getBytes();
     private static Key aesKey;
     private static Cipher cipher;
-    private static byte[] textBytes, decrypted, decoded;
+    private static byte[] textBytes, encrypted, decrypted, encoded, decoded;
 
     /**
      * Order for decrypt: getBytes, decode, decrypt, toString
@@ -44,5 +44,34 @@ public class EncryptionUtil {
         }
         // return as String
         return new String(decrypted);
+    }
+
+    /**
+     * Order for encrypt: getBytes, encrypt, encode, toString
+     *
+     * @param text
+     * @return
+     */
+    public static String encrypt(String text) {
+
+        try {
+            // Create key and cipher
+            aesKey = new SecretKeySpec(KEY, "AES");
+            cipher = Cipher.getInstance("AES");
+            cipher.init(Cipher.ENCRYPT_MODE, aesKey);
+
+            // get bytes
+            textBytes = text.getBytes();
+
+            //encrypt
+            encrypted = cipher.doFinal(textBytes);
+
+            // encode
+            encoded = new Base64().encode(encrypted);
+        } catch (Exception e) {
+            return null;
+        }
+        // return as String
+        return new String(encoded);
     }
 }
