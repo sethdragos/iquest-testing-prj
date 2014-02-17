@@ -34,7 +34,7 @@ public class SearchPopularSearchEngineSteps extends SeleniumSteps {
 
     @Then("the text \"$textFragment\" is present")
     public void shouldSee(final String textFragment) {
-        assertTrue(selenium.getBodyText().contains(textFragment));
+        assertTrue(selenium.getHtmlSource().contains(textFragment));
     }
 
     @When("I click the link \"$linkText\"")

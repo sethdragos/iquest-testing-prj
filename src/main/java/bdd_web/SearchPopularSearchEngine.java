@@ -28,7 +28,7 @@ import java.util.List;
  * User: dragos.serghie
  */
 public class SearchPopularSearchEngine extends JUnitStories {
-    private final Selenium selenium = new DefaultSelenium("127.0.0.1", 4444, "*chrome", "http://www.google.com/");
+    private final Selenium selenium = new DefaultSelenium("127.0.0.1", 4444, "*googlechrome", "http://www.google.com/");
     private final SeleniumContext seleniumContext = new SeleniumContext();
 
     @Override
