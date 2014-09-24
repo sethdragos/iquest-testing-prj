@@ -4,6 +4,8 @@ import java.io.IOException;
 
 import utils.SimpleHttpClient;
 
+import org.apache.http.Header;
+import org.apache.http.client.methods.HttpGet;
 import org.testng.annotations.Test;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -42,6 +44,5 @@ public class VerifyRequestTest {
  
     Assert.assertEquals(httpClient.getResponseStatusCode(), expectedStatus, "HTTP response NOT OK");
     System.out.println("HTTP status OK");
-    
     }	
 }
